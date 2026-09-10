@@ -513,3 +513,6 @@ h1 em, h2 em {
 
 /* Price written in words rather than numbers */
 .price.price-text { font-size: 1.6rem; line-height: 1.2; }
+
+/* Portrait photo inside a blog post */
+.prose img.portrait { width: 100%; max-width: 440px; margin-inline: auto; }
