@@ -6,12 +6,17 @@ from the project folder:
 
     python3 tools/sync.py
 
+To update only some pages, list them:
+
+    python3 tools/sync.py about/index.html blog/index.html
+
 Pages are only touched between their <!-- header:start/end --> and
 <!-- footer:start/end --> markers. The current page's menu link is marked
 with aria-current so it shows as selected.
 """
 import pathlib
 import re
+import sys
 
 root = pathlib.Path(__file__).resolve().parent.parent
 partials = root / "tools" / "partials"
@@ -19,8 +24,11 @@ header = (partials / "header.html").read_text(encoding="utf-8").strip()
 footer = (partials / "footer.html").read_text(encoding="utf-8").strip()
 skip_dirs = {"tools", "reference", ".git", ".claude"}
 
+only = {(pathlib.Path.cwd() / a).resolve() for a in sys.argv[1:]}
 changed = 0
 for page in sorted(root.rglob("*.html")):
+    if only and page.resolve() not in only:
+        continue
     rel = page.relative_to(root)
     if rel.parts[0] in skip_dirs:
         continue
