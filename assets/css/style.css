@@ -399,7 +399,7 @@ h1 em, h2 em {
 .page-hero-grid .arch { max-width: 360px; width: 100%; justify-self: end; }
 .page-hero .hero-actions { margin-bottom: 0; }
 .location-note {
-  display: inline-flex; align-items: center; gap: .5rem;
+  display: flex; width: fit-content; align-items: center; gap: .5rem;
   padding: .4rem .95rem; margin: 0 0 1.3rem; border-radius: 999px;
   background: var(--green-soft); color: var(--green-deep); font-size: .88rem; font-weight: 600;
 }
@@ -503,3 +503,13 @@ h1 em, h2 em {
   .page-hero-grid .arch { justify-self: center; max-width: 320px; }
   .side { position: static; }
 }
+
+/* Spacing when a note or banner follows another block */
+.notice, .banner { margin-top: 1.5rem; }
+.notice:first-child, .banner:first-child, .side > .notice, .side > .banner { margin-top: 0; }
+
+/* Name under a testimonial */
+.testimonial figcaption { margin: -.4rem 0 1.6rem; font-size: .9rem; font-weight: 600; letter-spacing: .04em; color: var(--gold-text); }
+
+/* Price written in words rather than numbers */
+.price.price-text { font-size: 1.6rem; line-height: 1.2; }
