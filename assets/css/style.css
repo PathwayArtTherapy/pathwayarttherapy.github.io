@@ -338,7 +338,9 @@ h1 em, h2 em {
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1040px) {
+@media (max-width: 980px) {
+  /* No blur on small screens: it would trap the fixed menu inside the header */
+  .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--cream); }
   .nav-toggle { display: inline-block; }
   .nav {
     position: fixed; inset: var(--header-h) 0 0 0; z-index: 49;
