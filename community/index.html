@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact | Pathway Art Therapy</title>
-<meta name="description" content="Get in touch with Lou Lou Rodrigues at Pathway Art Therapy. Send a message or book a free intro call.">
-<meta property="og:title" content="Contact Pathway Art Therapy">
-<meta property="og:image" content="/assets/img/loulou-couch-smiling.jpg">
+<title>Community catch-up | Pathway Art Therapy</title>
+<meta name="description" content="A relaxed monthly online catch-up with Lou Lou Rodrigues for people living abroad, partners of people who travel for work, and anyone in a long-distance relationship.">
+<meta property="og:title" content="Monthly community catch-up | Pathway Art Therapy">
+<meta property="og:image" content="/assets/img/blog-trieste-desk.jpg">
 <link rel="icon" type="image/png" href="/assets/img/logo-mark.png">
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/css/style.css">
@@ -30,7 +30,7 @@
             <li><a href="/art-therapy/">Art therapy in Australia</a></li>
             <li><a href="/creative-wellbeing/">Creative wellbeing worldwide</a></li>
             <li><a href="/social-groups/">Social groups</a></li>
-            <li><a href="/community/">Community catch-up</a></li>
+            <li><a href="/community/" aria-current="page">Community catch-up</a></li>
             <li><a href="/art-education/">Art education for kids &amp; teens</a></li>
             <li><a href="/#fees">Fees</a></li>
           </ul>
@@ -50,7 +50,7 @@
           </ul>
         </li>
         <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/" aria-current="page">Contact</a></li>
+        <li><a href="/contact/">Contact</a></li>
         <li class="nav-cta"><a class="btn btn-primary" href="/book/">Book a call</a></li>
       </ul>
     </nav>
@@ -61,24 +61,45 @@
 <main id="main">
 
   <section class="page-hero">
-    <div class="wrap">
-      <p class="eyebrow">Contact</p>
-      <h1>Let’s <em>have a chat</em></h1>
-      <p class="lead">Whether you’re a parent, looking for support for yourself, or a fellow professional, I’d love to hear from you. Send a message below or book a free intro call.</p>
-      <p class="lead">Letting me know where you live helps me suggest the right kind of session for you.</p>
+    <div class="wrap page-hero-grid">
+      <div>
+        <p class="eyebrow">Monthly community catch-up</p>
+        <h1>Building a life abroad is <em>easier together</em></h1>
+        <p class="lead">A relaxed online catch-up, once a month, for people living abroad, partners of people who travel for work, and anyone in a long-distance relationship.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#join">Join the next catch-up</a>
+          <a class="btn btn-ghost" href="/creative-wellbeing/">About creative wellbeing</a>
+        </div>
+      </div>
+      <div class="arch"><img src="/assets/img/blog-trieste-desk.jpg" alt="A laptop, sketchbook and art supplies on a sunny wooden desk by a window"></div>
     </div>
   </section>
 
-  <section class="section section-tight">
-    <div class="wrap contact-grid">
+  <section class="section section-sand">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Is this for you?</p>
+        <h2>Come as you are</h2>
+      </div>
+      <ul class="feel-grid">
+        <li class="feel">You’ve moved countries and you’re still finding your people</li>
+        <li class="feel">Your partner travels for work and you’re often holding the fort</li>
+        <li class="feel">You’re in a long-distance relationship</li>
+      </ul>
+      <p class="note">You don’t need to have it all figured out. Just bring yourself.</p>
+    </div>
+  </section>
 
-      <!-- Contact form: sent via Web3Forms to loulou@pathwayarttherapy.com -->
+  <section class="section" id="join">
+    <div class="wrap contact-grid">
       <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-web3forms>
         <input type="hidden" name="access_key" value="eac7b0c5-36a3-4de7-83de-edd7cd0897fb">
-        <input type="hidden" name="subject" value="New enquiry from the Pathway Art Therapy website">
+        <input type="hidden" name="subject" value="Community catch-up sign-up">
         <input type="hidden" name="from_name" value="Pathway Art Therapy website">
+        <input type="hidden" name="interest" value="Monthly community catch-up">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
+        <h2 class="h3">Join the next catch-up</h2>
+        <p class="privacy-note">Leave your details and I’ll email you the date, time and link for the next one.</p>
         <div class="field-row">
           <label>Your name
             <input type="text" name="name" required autocomplete="name">
@@ -87,48 +108,24 @@
             <input type="email" name="email" required autocomplete="email">
           </label>
         </div>
-
-        <div class="field-row">
-          <label>I’m interested in
-            <select name="interest" required>
-              <option value="">Choose one</option>
-              <option>Art therapy in Australia, for my child or teen</option>
-              <option>Art therapy in Australia, for me</option>
-              <option>NDIS art therapy, plan or self-managed</option>
-              <option>Creative wellbeing, outside Australia</option>
-              <option>Social groups</option>
-              <option>Art education classes</option>
-              <option>Professional development</option>
-              <option>Something else</option>
-            </select>
-          </label>
-          <label><span>Where do you live?</span>
-            <input type="text" name="location" required placeholder="Country, and state if in Australia" autocomplete="country-name">
-          </label>
-        </div>
-
-        <label>Message
-          <textarea name="message" rows="6" required placeholder="Share as much or as little as you like."></textarea>
+        <label><span>Where do you live?</span>
+          <input type="text" name="location" required placeholder="City or country" autocomplete="country-name">
         </label>
-
-        <button class="btn btn-primary" type="submit">Send message</button>
+        <label><span>Anything you’d like me to know? <span class="opt">(optional)</span></span>
+          <textarea name="message" rows="4" placeholder="Share as much or as little as you like."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Join the next catch-up</button>
         <p class="form-status" role="status" aria-live="polite"></p>
-        <p class="privacy-note">Your details are only used to reply to you. Please keep health details brief for now, and we can talk more once we connect. <a href="/privacy/">Privacy policy</a></p>
+        <p class="privacy-note">Your details are only used to send you catch-up information. <a href="/privacy/">Privacy policy</a></p>
       </form>
 
       <aside class="contact-aside">
-        <div class="arch"><img src="/assets/img/loulou-portrait.jpg" alt="Lou Lou Rodrigues smiling"></div>
         <div class="aside-card">
-          <h2 class="h3">Prefer to talk?</h2>
-          <p>Book a free intro call at a time that suits you.</p>
-          <a class="btn btn-primary" href="/book/">Book a free intro call</a>
-          <hr>
-          <p><strong>Email</strong><br><a href="mailto:loulou@pathwayarttherapy.com">loulou@pathwayarttherapy.com</a></p>
-          <p><strong>Follow along</strong><br><a href="https://www.instagram.com/pathway.arttherapy/" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/lou-lou-rodrigues-264561124/" rel="noopener">LinkedIn</a></p>
+          <h2 class="h3">Questions first?</h2>
+          <p>I’m happy to tell you more before you join. Send me a message, or book a free intro call.</p>
+          <a class="btn btn-ghost" href="/contact/">Send a message</a>
         </div>
-        <p class="small-note">Sessions aren’t crisis support. If you need urgent help, please contact your local emergency services.</p>
       </aside>
-
     </div>
   </section>
 

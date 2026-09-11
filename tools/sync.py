@@ -22,7 +22,7 @@ root = pathlib.Path(__file__).resolve().parent.parent
 partials = root / "tools" / "partials"
 header = (partials / "header.html").read_text(encoding="utf-8").strip()
 footer = (partials / "footer.html").read_text(encoding="utf-8").strip()
-skip_dirs = {"tools", "reference", ".git", ".claude"}
+skip_dirs = {"tools", "reference", ".git", ".claude", ".node"}
 
 only = {(pathlib.Path.cwd() / a).resolve() for a in sys.argv[1:]}
 changed = 0
