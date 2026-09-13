@@ -1,6 +1,6 @@
 # Pathway Art Therapy website
 
-The website for [Pathway Art Therapy](https://pathwayarttherapy.github.io), hosted free on GitHub Pages.
+The website for [Pathway Art Therapy](https://pathwayarttherapy.com), hosted free on GitHub Pages.
 It is plain HTML and CSS, so every page is a normal file you can open and edit.
 
 ## Where things live
