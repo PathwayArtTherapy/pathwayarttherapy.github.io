@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found | Pathway Art Therapy</title>
-<meta name="description" content="Sorry, this page can’t be found. Head back to the Pathway Art Therapy home page or get in touch with Lou Lou.">
+<title>Pay for a session | Pathway Art Therapy</title>
+<meta name="description" content="Pay securely for a Pathway Art Therapy session by card, in Australian dollars, pounds or euros.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Page not found">
-<meta property="og:image" content="/assets/img/sketch-umbrella.jpg">
+<meta property="og:title" content="Pay for a session">
+<meta property="og:image" content="/assets/img/watercolour-palette.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -66,16 +66,71 @@
   <section class="page-hero">
     <div class="wrap page-hero-grid">
       <div>
-        <p class="eyebrow">Page not found</p>
-        <h1>This path <em>doesn’t lead anywhere</em></h1>
-        <p class="lead">Sorry, I can’t find the page you’re looking for. It may have moved when the website was updated, or the address might have a small typo.</p>
-        <p>Looking to book? <a class="link-arrow" href="/book/" target="_blank" rel="noopener">Book a free intro call</a></p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="/">Go to the home page</a>
-          <a class="btn btn-ghost" href="/contact/">Send me a message</a>
+        <p class="eyebrow">Payments</p>
+        <h1>Pay for a session, <em>in your currency</em></h1>
+        <p class="lead">Pay securely by card through Stripe. Choose your session and the currency that suits you, and you’ll get a receipt by email.</p>
+        <div class="notice">
+          <p><strong>Using NDIS funding?</strong> There’s nothing to pay here. I’ll send an itemised invoice to your plan manager, or to you if you self-manage.</p>
         </div>
       </div>
-      <div class="arch"><img src="/assets/img/sketch-umbrella.jpg" alt="Coloured pencil sketch of a figure with a yellow umbrella in the rain"></div>
+      <div class="arch"><img src="/assets/img/watercolour-palette.jpg" alt="A watercolour palette with bright, well-used paints"></div>
+    </div>
+  </section>
+
+  <section class="section section-sand" id="pay">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Choose what you’re paying for</p>
+        <h2>Secure card payment</h2>
+        <p>Each button opens a secure Stripe checkout in a new tab.</p>
+      </div>
+      <div class="fee-grid">
+        <div class="fee-card featured">
+          <span class="tag">One-to-one</span>
+          <h3>Individual session</h3>
+          <p class="price">$180 <small>AUD</small></p>
+          <p class="price-also">£95 <small>GBP</small> <span aria-hidden="true">·</span> €110 <small>EUR</small></p>
+          <ul>
+            <li>Art therapy in Australia, or creative wellbeing everywhere else</li>
+            <li>50-minute session, plus 15 minutes of session notes</li>
+          </ul>
+          <span class="btn-spacer"></span>
+          <div class="pay-buttons">
+            <a class="btn btn-primary" href="STRIPE-LINK:session-aud" target="_blank" rel="noopener">Pay $180 AUD</a>
+            <a class="btn btn-ghost" href="STRIPE-LINK:session-gbp" target="_blank" rel="noopener">Pay £95 GBP</a>
+            <a class="btn btn-ghost" href="STRIPE-LINK:session-eur" target="_blank" rel="noopener">Pay €110 EUR</a>
+          </div>
+        </div>
+        <div class="fee-card">
+          <span class="tag">Groups</span>
+          <h3>Group session</h3>
+          <p class="price">$85 <small>AUD per child</small></p>
+          <p class="price-also">€45 <small>EUR per person, outside Australia</small></p>
+          <ul>
+            <li>One 90-minute group session</li>
+            <li>In Australia, the same price privately or through a plan-managed or self-managed NDIS plan</li>
+          </ul>
+          <span class="btn-spacer"></span>
+          <div class="pay-buttons">
+            <a class="btn btn-ghost" href="STRIPE-LINK:group-aud" target="_blank" rel="noopener">Pay $85 AUD</a>
+            <a class="btn btn-ghost" href="STRIPE-LINK:group-eur" target="_blank" rel="noopener">Pay €45 EUR</a>
+          </div>
+        </div>
+        <div class="fee-card">
+          <span class="tag">For professionals</span>
+          <h3>Professional development</h3>
+          <p class="price">$100 <small>AUD per session</small></p>
+          <ul>
+            <li>One 50-minute session for an individual practitioner</li>
+            <li>Team workshops are invoiced separately</li>
+          </ul>
+          <span class="btn-spacer"></span>
+          <div class="pay-buttons">
+            <a class="btn btn-ghost" href="STRIPE-LINK:pd-aud" target="_blank" rel="noopener">Pay $100 AUD</a>
+          </div>
+        </div>
+      </div>
+      <p class="fees-note">Paying for several sessions, or need an invoice instead? <a href="/contact/">Just ask</a>. Payments are processed by Stripe, so I never see your card details.</p>
     </div>
   </section>
 

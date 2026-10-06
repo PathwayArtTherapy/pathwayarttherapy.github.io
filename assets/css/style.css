@@ -528,3 +528,7 @@ h1 em, h2 em {
 .fee-table th:last-child, .fee-table td:last-child { text-align: right; }
 .fee-table td:last-child { font-weight: 600; color: var(--green-deep); }
 .fee-table tbody tr:last-child td { border-bottom: 0; }
+
+/* Payment page: stacked currency buttons inside a fee card */
+.pay-buttons { display: grid; gap: .6rem; }
+.pay-buttons .btn { width: 100%; justify-content: center; text-align: center; }
